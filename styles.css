@@ -12,6 +12,9 @@ body {
     font-size: 2rem;
     margin-bottom: 0;
   }
+  h2 {
+    margin-top: 0;
+  }
   /* make images flexible */
   img {
     max-width: 100%;
@@ -122,8 +125,8 @@ body {
       padding: 0;
       margin: 0;
       list-style-type: none;
-        display: flex;
-        flex-flow: column wrap;
+      display: flex;
+      flex-flow: column wrap;
       justify-content: center;
       text-align: center;
     }
@@ -136,25 +139,7 @@ body {
       justify-content: space-between;
     }
 
-    figure {
-      margin: 3rem 0 0 0;
-      background-color: #59331d;
-      border-radius: 10px;
-    }
-    figure img {
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-    }
-    figcaption {
-      display: none;
-    }
-
     .products {
-      display: flex;
-      flex-flow: column;
-    }
-
-    .product {
       display: flex;
       flex-flow: column;
     }
@@ -171,6 +156,10 @@ body {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
     }
+
+    .grid .item {
+      margin-right: 10px;
+    }
   }
 
   @media (min-width: 1000px) {
@@ -178,5 +167,9 @@ body {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
+    }
+
+    .grid .item {
+      margin-right: 10px;
     }
   }
